@@ -1,11 +1,11 @@
-const container = document.querySelector(".container");
-const btn = document.querySelector(".button");
+const button = document.querySelector('.button');
+const colorActual = document.querySelector('.color');
 
-function changecolor(){
-    container.setAttribute("style", "background-color: darkblue;");
-    btn.addEventListener ("click", changecolor);
-
+function changeColor() {
+ 
+  document.body.style.backgroundColor = 'darkblue'; 
+  colorActual.textContent = 'darkblue';
 }
 
-
+button.addEventListener('click', changeColor);
 
